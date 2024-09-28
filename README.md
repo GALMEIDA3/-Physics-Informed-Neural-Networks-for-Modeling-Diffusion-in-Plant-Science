@@ -1,5 +1,3 @@
-#Physics-Informed Neural Networks for Modeling Diffusion in Plant Science
-
 # Physics-Informed Neural Networks for Modeling Diffusion in Plant Science 
 
 This repository contains a Python implementation of Physics-Informed Neural Networks (PINNs) aimed at modeling diffusion processes relevant to plant science. By integrating neural networks with physical principles, this approach allows for the effective simulation and analysis of diffusion phenomena, which are crucial for understanding various biological processes in plants. 
@@ -42,6 +40,9 @@ The script will train the PINN model and produce plots of the diffusion solution
 Code Overview
 Model Architecture
 The model is defined using the PINN class, which inherits from tf.keras.Model. The architecture consists of:
+
+∂u/∂t = D ∂²u/∂x² + f(x,t) 
+
 
 Two hidden layers with 20 neurons each and tanh activation functions.
 An output layer that provides the predicted value 
